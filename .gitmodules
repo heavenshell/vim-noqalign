@@ -1,0 +1,3 @@
+[submodule "noqalign"]
+	path = noqalign
+	url = https://github.com/AriyaISIHARA/noqalign.git
