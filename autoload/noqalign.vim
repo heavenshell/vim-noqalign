@@ -11,6 +11,10 @@ function! s:check_noqalign()
     let noqalign = exepath('noqalign')
   else
     let root_path = finddir('noqalign', expand('%:p') . ';')
+    if root_path == ''
+      echohl Error | echomsg 'noqalign is not installed.' | echohl None
+      return ''
+    endif
     let root_path = fnamemodify(root_path, ':p')
     let noqalign = printf('python %snoqalign/noqalign.py', root_path)
   endif
@@ -54,6 +58,9 @@ function! noqalign#run(...)
   let s:formatted = []
 
   let path = s:check_noqalign()
+  if path == ''
+    return
+  endif
   let file = expand('%:p')
   let cmd = printf('%s %s -', path, g:noqalign_format)
   let s:job = job_start(cmd, {

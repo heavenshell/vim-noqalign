@@ -1,5 +1,7 @@
 # vim-noqalign
 
+[![Build Status](https://travis-ci.org/heavenshell/vim-noqalign.svg?branch=master)](https://travis-ci.org/heavenshell/vim-noqalign)
+
 Simple Vim wrapper for [noqalign](https://github.com/AriyaISIHARA/noqalign).
 
 ![Asynchronous format](./assets/vim-noqalign.gif)
