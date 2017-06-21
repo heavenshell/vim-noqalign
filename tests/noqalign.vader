@@ -1,16 +1,16 @@
 # vim:set et sw=4 ts=4 tw=79:
 Before (Setup tests):
-  call system('cp ./_template.py ./fixtures.py')
+  call system('cp _template.py __init__.py')
 
 After (Teardown tests):
-  call delete('./fixtures.py')
+  call delete('./__init__.py')
 
 Execute ('Format'):
-  edit ./fixtures.py
+  edit __init__.py
   set ft=python
   Noqalign
   sleep 2
-  write! fixtures.py
+  write! __init__.py
 
 Expect javascript:
   # -*- coding: utf-8 -*-

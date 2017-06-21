@@ -1,6 +1,6 @@
 *noqalign*	noqalign for Vim.
 
-Version: 0.1.0
+Version: 0.2.0
 Author: Shinya Ohynagi <sohyanagi@gmail.com>
 Repository: http://github.com/heavenshell/vim-noqalign/
 License: BSD, see LICENSE for more details.
@@ -42,10 +42,6 @@ Open Python file and just execute `:Noqalign`.
 
 If bufrer was edited while `Noqalign` executing, `Noqalign` would be canceled.
 
-- Automatically format on save
->
-  autocmd BufWritePost *.py call noqalign#run(1)
->
 ==============================================================================
 VARIABLES					*noqalign-variables*
 
@@ -55,8 +51,16 @@ g:noqalign_format				*g:noqalign_format*
 
 		Default value is '--align-'
 
+g:noqalign_strict				*g:noqalign_strict*
+		Only noqalign run at `__init__.py`
+
 ==============================================================================
 CHANGELOG						*noqalign-changelog*
+2017-06-22
+- Drop save on format option
+- Add strict option
+  see https://github.com/heavenshell/vim-noqalign/issues/2
+
 2017-06-18
 - First release
 
