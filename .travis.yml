@@ -15,7 +15,7 @@ install:
   - git clone https://github.com/junegunn/vader.vim.git
   - export VIM_EXE=$HOME/bin/vim/bin/vim
   - cd $HOME/build/heavenshell/vim-noqalign/
-  - git submodule update --init
+  - git submodule update --init --recursive
   - cd $HOME/build/heavenshell/vim-noqalign/tests
 
 before_script:
