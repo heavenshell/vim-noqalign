@@ -1,8 +1,11 @@
 sudo: required
+group: edge
 dist: xenial
 python:
   - 2.7
   - 3.6
+git:
+  submodules: false
 
 install:
   - git clone https://github.com/junegunn/vader.vim.git tests/vader.vim
