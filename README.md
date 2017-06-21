@@ -10,7 +10,8 @@ Simple Vim wrapper for [noqalign](https://github.com/AriyaISIHARA/noqalign).
 
 ### Invoke manually
 
-Open Python file and just execute `:Noqalign`.
+Open Python file(only `__init__.py` can available at default)
+and just execute `:Noqalign`.
 
 That's it.
 
