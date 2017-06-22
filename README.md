@@ -15,11 +15,12 @@ and just execute `:Noqalign`.
 
 That's it.
 
-### Automatically format on save
+### Settings
 
-```viml
-autocmd BufWritePost *.py, call noqalign#run(1)
-```
+| Variable            | Description              | Default value              |
+|:--------------------|:-------------------------|:---------------------------|
+| `g:noqalign_format` | `noqalign` format option | Default value is '--align-'|
+| `g:noqalign_strict` | Only run at `__init__.py`| Default is `1`             |
 
 ## License
 
